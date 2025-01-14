@@ -1,5 +1,18 @@
+@font-face {
+    font-family: 'navb';
+    src: url(bodoni-mt-regular.ttf);
+}
+@font-face {
+    font-family: 'hero';
+    src: url(Gidugu-Regular.ttf);
+}
+@font-face {
+    font-family: 'sattva';
+    src: url(moul.ttf);
+}
+
 body{
-    height:1542px;
+    height:1200px;
     background-image:
         linear-gradient(to bottom, rgba(0,0,0,0)50%, black),
         url("bg.png");
@@ -7,15 +20,15 @@ body{
     background-repeat:no-repeat;
     background-attachment: fixed;
     background-position:center center;
-
+    background-color: black;
 }
+
 .outer{
     border:1px solid;
-    border-color:rgba(255, 255, 255, 0.50);
+    border-color:rgba(255, 255, 255, 0.3);
     border-radius:15px;
     max-width: 100%;
     flex-shrink: 0;
-    box-shadow:5px 5px 5px hsla(0, 0%, 93%, 0.118);
     padding-top:0px;
     padding-bottom:30px;
     margin-top:60px;
@@ -23,13 +36,11 @@ body{
     margin-left:45px;
     text-align:center;  
     max-height:auto;
-        
-
 }
 
 .nav1{
     border:1px solid;
-    border-color:rgba(255, 255, 255, 0.50);
+    border-color:rgba(255, 255, 255, 0.3);
     flex-shrink: 0;
     margin-top:30px;
     text-align:center;  
@@ -46,42 +57,80 @@ body{
 }
 .navbar li{
     float:left;
-    font-family:'Times New Roman', Times, serif;
+    font-family:'navb';
     color:white;
-    font-size:25px;
+    font-size:23px;
     padding-inline: 60px;
     text-align:right;
     padding-top:5px;    
     margin-bottom:-15px;
 }
 .big-text{
-    font-size:60px;
     text-align:left;
-    font-family: Gidugu;  
-    margin-top:160px;  
-    
+    margin-top:200px;   
 }
 .vec{
     height:23px;   
     display:block;
-    margin-top:-140px;  
+    margin-top:-177px;  
+    margin-left:20px;
 }
 .big-text h1{
-    font-size: 140px;
+    font-size: 230px;
     text-align: left;
-    font-family: Gidugu;
+    font-family: 'hero';
     color:white;
     margin: 0;
     margin-left:50px;
+    line-height: 0.65;
 }
 p{
     text-align:left;
     color:white;
-    font-size: 200px;
-    margin:60px;
+    font-size: 160px;
+    margin-top:40px;
+    margin-left:60px;
+    font-family:'sattva';
 }
-/*<img style="width: 100%; height: 100%; 
-transform: rotate(-179.92deg); transform-origin: 0 0; 
-box-shadow: 100px 100px 100px; border-radius: 12px; 
-filter: blur(100px)" src="https://via.placeholder.com/2207x1537" />
-<div style="width: 100%; height: 100%; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50); border-radius: 20px; border: 1px rgba(255, 255, 255, 0.50) solid"></div>*/
+.nav2{
+    border:1px solid;
+    border-color:rgba(255, 255, 255, 0.3);
+    flex-shrink: 0;
+    margin-top:15px;
+    text-align:center;  
+    width:100%;
+}
+.reg {
+    transform: translateY(-50%);
+    margin-right:40px;
+    margin-top:-220px;
+
+}
+
+.register-btn {
+    font-family: 'navb';
+    font-size: 30px;
+    padding-top:25px;
+    padding-bottom:25px;
+    padding-right:7px;
+    padding-left:7px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius:400px;
+    text-transform: uppercase;
+    cursor: default; /* Ensures it looks static */
+    background-color:lightslategray;
+}
+.reg1{
+    margin-right:68px;
+    margin-top:-106.5px;
+}
+.reg1 h1{
+    margin-bottom:100px;
+    font-family: 'navb';
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    cursor: default; /* Ensures it looks static */
+}
